@@ -2,9 +2,11 @@
   "name": "git-diff-apply",
 	"displayName": "git-diff-apply",
 	"description": "",
+	"publisher": "guschnwg",
+	"license": "MIT",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.62.0"
+		"vscode": "^1.61.0"
 	},
 	"categories": [
 		"Other"
@@ -17,7 +19,7 @@
 		"commands": [
 			{
 				"command": "git-diff-apply.helloWorld",
-				"title": "Hello World"
+				"title": "Apply git diff"
 			}
 		]
 	},
@@ -30,7 +32,7 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.62.0",
+		"@types/vscode": "^1.61.0",
 		"@types/glob": "^7.1.4",
 		"@types/mocha": "^9.0.0",
 		"@types/node": "14.x",
