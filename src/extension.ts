@@ -1,5 +1,3 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -17,9 +15,9 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 
 		const terminal = vscode.window.createTerminal("Applying git diff from current editor");
-    terminal.sendText(`echo '${diff}' > my.patch`);
-    terminal.sendText('git apply my.patch');
-    terminal.sendText('rm my.patch');
+		terminal.sendText(`echo '${diff}' > my.patch`);
+		terminal.sendText('git apply my.patch');
+		terminal.sendText('rm my.patch');
 	});
 
 	context.subscriptions.push(disposable);
